@@ -17,4 +17,4 @@ Proyecto Final de la asignatura de Deep Learning (2020), del curso [V Experto Un
 
 * **Versión 4:**
 [Documentación](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl-upna-Face-Recognition-04-FineTuning.md)
-*Notebook*: [dl-upna-Face-Recognition-03-VGGFace2Keras_Architectures](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
+*Notebook*: [dl_upna_Face_Recognition_04_FineTuning](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
