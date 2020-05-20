@@ -17,13 +17,10 @@ El primer paso en cualquier cara automática sistemas de reconocimiento es la de
 En este ejemplo se hace uso de la Red Neural Convolucional en Cascada Multitarea, o MTCNN, para la detección y la alineación de la cara. Los enfoques de aprendizaje profundo pueden lograr un rendimiento impresionante en estas dos tareas.  MTCNN propone un marco de tareas múltiples en cascada profunda que explota la correlación inherente entre ellas para aumentar su rendimiento. En particular, este marco adopta una estructura en cascada con tres etapas de redes convolucionales profundas cuidadosamente diseñadas que predicen la cara y la ubicación de los puntos de referencia de una manera de grueso a fino. 
 
 #### Etapa 3: Representaciones
-Hemos detectado y alineado las imágenes de las caras y las hemos alimentado a un modelo de reconocimiento facial en los pasos anteriores. Ahora, tenemos representaciones vectoriales para cada imagen. Este es un concepto abstracto. Para hacerlo concreto, lo visualizaré.
-Transformaré los vectores de 1D en matrices de 2D, agregando el propio vector. De esta manera, cada línea de la matriz tendrá la misma información.
-La representación de la cara de VGG tiene 2622 ranuras horizontales. Por lo tanto, decidiremos que estas dos imágenes son la misma persona o no basándonos en esas representaciones vectoriales en lugar de las imágenes de los rostros en sí.
+Hemos detectado y alineado las imágenes de las caras y las hemos alimentado a un modelo de reconocimiento facial en los pasos anteriores. Ahora, tenemos representaciones vectoriales para cada imagen.
 
 #### Etapa 4: Verificación
-Compararemos las representaciones vectoriales de las imágenes. La forma más fácil de comparar dos vectores es encontrar la distancia euclidiana entre ellos. 
-
+Compararemos las representaciones vectoriales de las imágenes. 
 
 ## Conclusión 
 Con este notebook podemos comprobar como las redes neuronales son un sistema válido de reconocimiento facial. 
