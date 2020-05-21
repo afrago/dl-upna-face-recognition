@@ -9,7 +9,7 @@ Estas imágenes han sido divididas en tres directorios; train, validation y test
 ## Cómo funciona el reconocimiento facial
 
 ### Etapa 1 y 2: Detección y alineación
-La detección de rostros y ojos puede ser manejada por un algoritmo [adaboost](https://sefiks.com/2018/11/02/a-step-by-step-adaboost-example/). En otras palabras, el aprendizaje profundo no aparece en este paso. Los paquetes de visión computarizada comunes en pitón como OpenCV y Dlib ofrecen detección de cara y ojos.
+La detección de rostros y ojos puede ser manejada por un algoritmo [adaboost](https://sefiks.com/2018/11/02/a-step-by-step-adaboost-example/). En otras palabras, el aprendizaje profundo no aparece en este paso. Los paquetes de visión computarizada comunes en python como OpenCV y Dlib ofrecen detección de cara y ojos.
 
 La alineación es fácil si la cara y los ojos ya se han detectado. Los experimentos muestran que la aplicación de la alineación de la cara aumenta la precisión del modelo en más de un 1%. Desafortunadamente, ni OpenCV ni Dlib ofrecen alineación de cara como una función de salida. Tenemos que hacer algo de trigonometría aquí para alinear las caras.
 
