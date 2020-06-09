@@ -2,7 +2,7 @@
 
 ----
 
-*Notebook*: [dl_upna_Face_Recognition_04_FineTuning](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
+*Notebook*: [dl_upna_Face_Recognition_04_FineTuning](https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
 
 ## Finetuning
 El ajuste fino es un proceso para tomar un modelo de red que ya ha sido entrenado para una tarea determinada, y hacer que realice una segunda tarea similar.
