@@ -3,7 +3,7 @@
 
 ----
 
-*Notebook*: [dl-upna-Face-Recognition-03-VGGFace2Keras_Architectures](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_03_VGGFace2Keras_Architectures.ipynb)
+*Notebook*: [dl-upna-Face-Recognition-03-VGGFace2Keras_Architectures](https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_03_VGGFace2Keras_Architectures.ipynb)
 
 
 ## Comparación entre los diferentes modelos preentrenados de Keras-VGGFace
