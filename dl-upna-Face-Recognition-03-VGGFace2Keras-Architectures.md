@@ -1,3 +1,5 @@
+| [versión 1](./../dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./../dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./../dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./../dl-upna-Face-Recognition-04-FineTuning.html) |
+|--|--|--|--|
 
 ## Comparación entre los diferentes modelos preentrenados de Keras-VGGFace
 
