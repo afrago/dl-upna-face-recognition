@@ -4,7 +4,6 @@
 ----
 
 
-* **Versión 2:**
 *Notebook*: [dl-upna-Face-Recognition-02-VGGFace2Keras](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_02_VGGFace2Keras.ipynb)
 
 
