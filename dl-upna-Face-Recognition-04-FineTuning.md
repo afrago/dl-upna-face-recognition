@@ -1,7 +1,9 @@
 | [versión 1](./dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./dl-upna-Face-Recognition-04-FineTuning.html) |
 
-
 ----
+
+*Notebook*: [dl_upna_Face_Recognition_04_FineTuning](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
+
 ## Finetuning
 El ajuste fino es un proceso para tomar un modelo de red que ya ha sido entrenado para una tarea determinada, y hacer que realice una segunda tarea similar.
 En el siguiente notebook se realiza un modelo personalizado, basado en la arquitectura de VGGFace16, el cual es entrenado con una serie de imágenes.
