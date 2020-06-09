@@ -3,6 +3,11 @@
 
 ----
 
+
+* **Versión 2:**
+*Notebook*: [dl-upna-Face-Recognition-02-VGGFace2Keras](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_02_VGGFace2Keras.ipynb)
+
+
 ## Sistemas de reconocimiento facial
 El sistema de reconocimiento facial es una aplicación dirigida por ordenador que identifica automáticamente a una persona en una imagen digital. Esto es posible mediante un análisis de las características faciales del sujeto extraídas de la imagen.
 Los métodos de aprendizaje profundo son capaces de aprovechar conjuntos de datos muy grandes de rostros, lo que permite a los modelos modernos entrenarse y evaluar si se ha realizado correctamente el proceso de reconocmiento facial.
