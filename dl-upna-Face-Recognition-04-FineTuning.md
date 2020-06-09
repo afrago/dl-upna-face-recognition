@@ -1,4 +1,5 @@
 | [Principal](./index.html) | [versión 1](./dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./dl-upna-Face-Recognition-04-FineTuning.html) |
+
 ----
 
 *Notebook*: [dl_upna_Face_Recognition_04_FineTuning](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb)
