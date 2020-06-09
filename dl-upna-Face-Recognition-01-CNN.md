@@ -1,6 +1,7 @@
+| [versión 1](./dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./dl-upna-Face-Recognition-04-FineTuning.html) |
 
-| [versión 1](./../dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./../dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./../dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./../dl-upna-Face-Recognition-04-FineTuning.html) |
-|--|--|--|--|
+
+----
 
 ##                Redes Neuronales Convolucionales
 Se produjo un avance en la creación de modelos para la clasificación de imágenes cuando se descubrió que se podía usar una red neuronal convolucional (CNN) para extraer de forma progresiva niveles cada vez más altos de representaciones del contenido de las imágenes. En lugar de preprocesar los datos para obtener atributos como texturas y formas, una CNN toma, como información de entrada, los datos de los píxeles sin procesar de la imagen y aprende a extraer estos atributos y a deducir qué objeto constituyen.
