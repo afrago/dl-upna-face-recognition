@@ -2,6 +2,10 @@
 
 
 ----
+
+*Notebook*: [dl-upna-Face-Recognition-03-VGGFace2Keras_Architectures](https://github.com/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_03_VGGFace2Keras_Architectures.ipynb)
+
+
 ## Comparación entre los diferentes modelos preentrenados de Keras-VGGFace
 
 La biblioteca keras-vggface proporciona tres modelos VGGModels pre-entrenados, un modelo VGGFace1 a través de model='vgg16′ (el predeterminado), y dos modelos VGGFace2 'resnet50' y 'senet50'.
