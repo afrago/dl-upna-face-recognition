@@ -1,8 +1,8 @@
-| [Principal](./index.html) | [versión 1](./dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./dl-upna-Face-Recognition-04-FineTuning.html) | **[versión 5]**
+| [Principal](./index.html) | [versión 1](./dl-upna-Face-Recognition-01-CNN.html) |  [versión 2](./dl-upna-Face-Recognition-02-VGGFace2Keras.html) | [versión 3](./dl-upna-Face-Recognition-03-VGGFace2Keras-Architectures.html) |  [versión 4](./dl-upna-Face-Recognition-04-FineTuning.html) | **versión 5**
 
 ----
 
-*Código*: (./dl-upna-who-am-i)
+*Código*: [dl-upna-who-am-i](https://github.com/afrago/dl-upna-who-am-i/)
 
 ## Who am I?
 
