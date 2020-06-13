@@ -2,7 +2,7 @@
 
 Proyecto Final de la asignatura de Deep Learning (2020), del curso [V Experto Universitario en Ciencia de Datos y Machine Learning](https://www.unavarra.es/fundacionuniversidadsociedad/formacion/titulos-propios-de-la-universidad/ingenieria-ciencias-basicas?contentId=234153)
 
-https://afrago.github.io/dl-upna-face-recognition
+https://afrago.github.io/dl-upna-face-recognition/index.html
 
 ---
 
@@ -24,6 +24,4 @@ https://afrago.github.io/dl-upna-face-recognition
 
 * **Producto 0.0-alpha-0.1:**
 [Documentación](./dl-upna-who-am-i.html)
-*Código*: (./dl-upna-who-am-i)
-
-
+*Código*: [dl-upna-who-am-i](https://github.com/afrago/dl-upna-who-am-i/tree/293fed04cb5b1781ef58aa1bf003a12f37ff478f)
