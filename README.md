@@ -24,4 +24,4 @@ https://afrago.github.io/dl-upna-face-recognition/
 
 * **Producto 0.0-alpha-0.1:**
 [Documentación](./dl-upna-who-am-i.html)
-*Código*: [dl-upna-who-am-i](https://github.com/afrago/dl-upna-who-am-i/tree/293fed04cb5b1781ef58aa1bf003a12f37ff478f)
+*Código*: [dl-upna-who-am-i](https://github.com/afrago/dl-upna-who-am-i)
