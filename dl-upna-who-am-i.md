@@ -24,3 +24,5 @@ La conclusión con esta versión del producto final es que en este tipo de aplic
 
 Por otro lado, en proximas versiones se analizará la realización del proyecto con [ReactNative](https://blog.tensorflow.org/2020/02/tensorflowjs-for-react-native-is-here.html) ya que tensorflow.js dispone de una versión específica para este entorno.
 
+
+
