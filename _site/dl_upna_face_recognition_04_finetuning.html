@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--
+  Modified version of jekyll-theme-architect-0.1.1/_layouts/default.html
+-->
+
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/dl-upna-face-recognition/assets/css/print.css" media="print" type="text/css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom/custom.css" media="screen" type="text/css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/dl-upna-face-recognition/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <script src="https://cdn.usefathom.com/script.js" site="IQOPWWLQ" defer></script>
+
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Face_Recognition_04_FineTuning | dl-upna-face-recognition</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Face_Recognition_04_FineTuning" />
+<meta name="author" content="Ander Frago Landa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Finetuning" />
+<meta property="og:description" content="Finetuning" />
+<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/dl_upna_face_recognition_04_finetuning" />
+<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/dl_upna_face_recognition_04_finetuning" />
+<meta property="og:site_name" content="dl-upna-face-recognition" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/dl-upna-face-recognition/dl_upna_face_recognition_04_finetuning","author":{"@type":"Person","name":"Ander Frago Landa"},"headline":"Face_Recognition_04_FineTuning","description":"Finetuning","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
+    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>dl-upna-face-recognition</h1> </a>
+
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <h2></h2>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="container-fluid bg-light">
+    <div class="row my4Vientos-subject">
+      <aside class="col-4 col-md-2 " >
+
+        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-group mr-auto">
+              <li class="list-group-item">
+                <a class="nav-link" href="/dl-upna-face-recognition/">                  
+                  <div class="d-sm-none d-md-block">
+                    <span data-feather="home"></span>
+                    Introducción
+                  </div> 
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="home"></span>
+                  </div> 
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="linkedin"></span>
+                        CV
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="linkedin"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://github.com/afrago">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="github"></span>
+                        Github
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="github"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item dropdown ">
+                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span data-feather="globe"> </span> Face recognition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
+                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
+                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
+                  </div>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+
+      </aside>
+      <section class="col-8 col-md-10">
+        <div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 mx-auto">
+            <h2 id="finetuning">Finetuning</h2>
+<p><em>Notebook</em>: <a href="https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_04_FineTuning.ipynb">dl_upna_Face_Recognition_04_FineTuning</a></p>
+
+<p>El ajuste fino es un proceso para tomar un modelo de red que ya ha sido entrenado para una tarea determinada, y hacer que realice una segunda tarea similar.
+En el siguiente notebook se realiza un modelo personalizado, basado en la arquitectura de VGGFace16, el cual es entrenado con una serie de imágenes.
+Estas imágenes han sido divididas en tres directorios; train, validation y test. Dentro de train y validation aparecen varias fotos de los diferentes personajes. Una vez entrenado el modelo se realiza la predicción de las imagenes almacenadas en el directorio test.</p>
+
+<h2 id="cómo-funciona-el-reconocimiento-facial">Cómo funciona el reconocimiento facial</h2>
+
+<h3 id="etapa-1-y-2-detección-y-alineación">Etapa 1 y 2: Detección y alineación</h3>
+<p>La detección de rostros y ojos puede ser manejada por un algoritmo <a href="https://sefiks.com/2018/11/02/a-step-by-step-adaboost-example/">adaboost</a>. En otras palabras, el aprendizaje profundo no aparece en este paso. Los paquetes de visión computarizada comunes en python como OpenCV y Dlib ofrecen detección de cara y ojos.</p>
+
+<p>La alineación es fácil si la cara y los ojos ya se han detectado. Los experimentos muestran que la aplicación de la alineación de la cara aumenta la precisión del modelo en más de un 1%. Desafortunadamente, ni OpenCV ni Dlib ofrecen alineación de cara como una función de salida. Tenemos que hacer algo de trigonometría aquí para alinear las caras.</p>
+
+<p>El aprendizaje profundo sólo aparece en esta etapa de representación. Alimentaremos con imágenes de rostros a un modelo de redes neuronales convolucionales pero la tarea aquí no es la clasificación. Usaremos modelos de CNN para encontrar incrustaciones similares a los <a href="https://sefiks.com/2018/03/21/autoencoder-neural-networks-for-unsupervised-learning">Autoencoder</a>.</p>
+
+<h3 id="etapa-3-representación">Etapa 3: Representación</h3>
+<p>Una vez detectadas y alineadas las imágenes de las caras y las hemos alimentado a un modelo de reconocimiento facial en los pasos anteriores. Ahora, tenemos representaciones vectoriales para cada imagen. Transformaremos los vectores de 1D en matrices de 2D, agregando el propio vector. De esta manera, cada línea de la matriz tendrá la misma información. 
+<em>Esto es similar a los códigos de barras. Sólo almacenan datos horizontalmente. Si dañas el código de barras horizontalmente, todavía puedes leer datos de él. Sin embargo, los daños verticales también causan pérdida de datos.</em>
+<a href="https://i2.wp.com/sefiks.com/wp-content/uploads/2020/05/vggface-representation.png?resize=720%2C365&amp;ssl=1">La representación de la cara de VGG tiene 2622 ranuras horizontales</a></p>
+
+<h3 id="etapa-4-verificación">Etapa 4: Verificación</h3>
+<p>Compararemos las representaciones vectoriales de las imágenes. La forma más fácil de comparar dos vectores es encontrar la <a href="https://sefiks.com/2018/08/13/cosine-similarity-in-machine-learning">distancia euclidiana</a> entre ellos.</p>
+   
+        </div>
+    
+    </div>
+</div>
+    
+
+
+      </section>
+
+     
+    </div>
+  </div>
+
+  
+  <script src="assets/js/feather.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

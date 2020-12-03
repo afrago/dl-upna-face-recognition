@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<!--
+  Modified version of jekyll-theme-architect-0.1.1/_layouts/default.html
+-->
+
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/dl-upna-face-recognition/assets/css/print.css" media="print" type="text/css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom/custom.css" media="screen" type="text/css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/dl-upna-face-recognition/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <script src="https://cdn.usefathom.com/script.js" site="IQOPWWLQ" defer></script>
+
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Face-Recognition-02-VGGFace2Keras | dl-upna-face-recognition</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Face-Recognition-02-VGGFace2Keras" />
+<meta name="author" content="Ander Frago Landa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Sistemas de reconocimiento facial" />
+<meta property="og:description" content="Sistemas de reconocimiento facial" />
+<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras" />
+<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras" />
+<meta property="og:site_name" content="dl-upna-face-recognition" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras","author":{"@type":"Person","name":"Ander Frago Landa"},"headline":"Face-Recognition-02-VGGFace2Keras","description":"Sistemas de reconocimiento facial","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
+    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>dl-upna-face-recognition</h1> </a>
+
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <h2></h2>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="container-fluid bg-light">
+    <div class="row my4Vientos-subject">
+      <aside class="col-4 col-md-2 " >
+
+        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-group mr-auto">
+              <li class="list-group-item">
+                <a class="nav-link" href="/dl-upna-face-recognition/">                  
+                  <div class="d-sm-none d-md-block">
+                    <span data-feather="home"></span>
+                    Introducción
+                  </div> 
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="home"></span>
+                  </div> 
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="linkedin"></span>
+                        CV
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="linkedin"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://github.com/afrago">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="github"></span>
+                        Github
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="github"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item dropdown ">
+                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span data-feather="globe"> </span> Face recognition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
+                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
+                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
+                  </div>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+
+      </aside>
+      <section class="col-8 col-md-10">
+        <div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 mx-auto">
+            <h2 id="sistemas-de-reconocimiento-facial">Sistemas de reconocimiento facial</h2>
+<p><em>Notebook</em>: <a href="https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_01_CNN.ipynb">dl-upna-Face-Recognition-01-CNN</a></p>
+
+<p>El sistema de reconocimiento facial es una aplicación dirigida por ordenador que identifica automáticamente a una persona en una imagen digital. Esto es posible mediante un análisis de las características faciales del sujeto extraídas de la imagen.
+Los métodos de aprendizaje profundo son capaces de aprovechar conjuntos de datos muy grandes de rostros, lo que permite a los modelos modernos entrenarse y evaluar si se ha realizado correctamente el proceso de reconocmiento facial.
+Un sistema de reconocimiento facial consta de dos modos:</p>
+<ol>
+  <li>verificación (o autenticación) de la cara:
+    <ul>
+      <li>La verificación de la cara implica una relación de coincidencia uno a uno, donde se compara una cara de una imagen de consulta, con la imagen de la cara una persona ya identificada.</li>
+    </ul>
+  </li>
+  <li>identificación (o reconocimiento) de la cara.
+    <ul>
+      <li>La identificación de la cara implica una comparación de uno a muchos que compara una cara de la consulta contra múltiples caras en la base de datos para asociar la identidad de la cara consultada con una de las que están en la base de datos.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="proceso-de-trabajo">Proceso de trabajo</h3>
+<p>El reconocimiento de las caras se describe a menudo como un proceso que consta de cuatro pasos: detección de las caras, alineación de las caras, extracción de los rasgos y, por último, reconocimiento de las caras.</p>
+
+<h4 id="etapa-1-y-2-detección-y-alineación">Etapa 1 y 2: Detección y alineación</h4>
+<p>El primer paso en cualquier cara automática sistemas de reconocimiento es la detección de rostros en imágenes. Después de que una cara ha sido detectada, la tarea de extracción de características es para obtener los rasgos que se introducen en un rostro sistema de clasificación. Dependiendo del tipo de sistema de clasificación, las características pueden ser características locales como líneas o puntos, o rasgos faciales como los ojos, la nariz y la boca.</p>
+
+<p>En este ejemplo se hace uso de la Red Neural Convolucional en Cascada Multitarea, o MTCNN, para la detección y la alineación de la cara. Los enfoques de aprendizaje profundo pueden lograr un rendimiento impresionante en estas dos tareas.  MTCNN propone un marco de tareas múltiples en cascada profunda que explota la correlación inherente entre ellas para aumentar su rendimiento. En particular, este marco adopta una estructura en cascada con tres etapas de redes convolucionales profundas cuidadosamente diseñadas que predicen la cara y la ubicación de los puntos de referencia de una manera de grueso a fino.</p>
+
+<h4 id="etapa-3-representaciones">Etapa 3: Representaciones</h4>
+<p>Hemos detectado y alineado las imágenes de las caras y las hemos alimentado a un modelo de reconocimiento facial en los pasos anteriores. Ahora, tenemos representaciones vectoriales para cada imagen.</p>
+
+<h4 id="etapa-4-verificación">Etapa 4: Verificación</h4>
+<p>Compararemos las representaciones vectoriales de las imágenes.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+<p>Con este notebook podemos comprobar como las redes neuronales son un sistema válido de reconocimiento facial. 
+El reconocimiento facial opera en uno o dos modos: 1) verificación (o autenticación) de la cara, y 2) identificación (o reconocimiento) de la cara. En ambos módos se puede hacer uso de las redes neuronales.</p>
+   
+        </div>
+    
+    </div>
+</div>
+    
+
+
+      </section>
+
+     
+    </div>
+  </div>
+
+  
+  <script src="assets/js/feather.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

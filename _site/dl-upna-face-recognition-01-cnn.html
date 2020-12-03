@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!--
+  Modified version of jekyll-theme-architect-0.1.1/_layouts/default.html
+-->
+
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/dl-upna-face-recognition/assets/css/print.css" media="print" type="text/css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom/custom.css" media="screen" type="text/css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/dl-upna-face-recognition/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <script src="https://cdn.usefathom.com/script.js" site="IQOPWWLQ" defer></script>
+
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Face-Recognition-01-CNN | dl-upna-face-recognition</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Face-Recognition-01-CNN" />
+<meta name="author" content="Ander Frago Landa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Redes Neuronales Convolucionales" />
+<meta property="og:description" content="Redes Neuronales Convolucionales" />
+<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-01-cnn" />
+<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-01-cnn" />
+<meta property="og:site_name" content="dl-upna-face-recognition" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-01-cnn","author":{"@type":"Person","name":"Ander Frago Landa"},"headline":"Face-Recognition-01-CNN","description":"Redes Neuronales Convolucionales","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
+    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>dl-upna-face-recognition</h1> </a>
+
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <h2></h2>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="container-fluid bg-light">
+    <div class="row my4Vientos-subject">
+      <aside class="col-4 col-md-2 " >
+
+        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-group mr-auto">
+              <li class="list-group-item">
+                <a class="nav-link" href="/dl-upna-face-recognition/">                  
+                  <div class="d-sm-none d-md-block">
+                    <span data-feather="home"></span>
+                    Introducción
+                  </div> 
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="home"></span>
+                  </div> 
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="linkedin"></span>
+                        CV
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="linkedin"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://github.com/afrago">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="github"></span>
+                        Github
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="github"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item dropdown ">
+                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span data-feather="globe"> </span> Face recognition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
+                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
+                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
+                  </div>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+
+      </aside>
+      <section class="col-8 col-md-10">
+        <div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 mx-auto">
+            <h2 id="redes-neuronales-convolucionales">Redes Neuronales Convolucionales</h2>
+<p><em>Notebook</em>: <a href="https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_01_CNN.ipynb">dl-upna-Face-Recognition-01-CNN</a></p>
+
+<p>Se produjo un avance en la creación de modelos para la clasificación de imágenes cuando se descubrió que se podía usar una red neuronal convolucional (CNN) para extraer de forma progresiva niveles cada vez más altos de representaciones del contenido de las imágenes. En lugar de preprocesar los datos para obtener atributos como texturas y formas, una CNN toma, como información de entrada, los datos de los píxeles sin procesar de la imagen y aprende a extraer estos atributos y a deducir qué objeto constituyen.
+Para comenzar, la CNN recibe un mapa de atributos de entrada: una matriz tridimensional en la que el tamaño de las dos primeras dimensiones corresponde al largo y ancho de las imágenes en píxeles. El tamaño de la tercera dimensión es 3 (corresponde a los 3 canales de una imagen de color: rojo, verde y azul). La CNN abarca un conjunto de módulos, y cada uno realiza tres operaciones.</p>
+
+<h3 id="capas-convolucionales">Capas convolucionales</h3>
+<p>Una convolución es la simple aplicación de un filtro a una entrada que resulta en una activación. La aplicación repetida del mismo filtro a una entrada da como resultado un mapa de activaciones llamado mapa de características, que indica las ubicaciones y la fuerza de una característica detectada en una entrada, como una imagen.</p>
+
+<p>Se puede crear una capa convolucional especificando tanto el número de filtros a aprender como el tamaño fijo de cada filtro, a menudo llamado forma de núcleo.</p>
+
+<h3 id="capas-de-agrupación">Capas de agrupación</h3>
+<p>La agrupación de capas proporciona un enfoque para reducir el muestreo de los mapas de características al resumir la presencia de características en parches del mapa de características.</p>
+
+<p>La agrupación máxima, o agrupación máxima, es una operación de agrupación que calcula el valor máximo, o más grande, en cada parche de cada mapa de características.</p>
+
+<h3 id="capa-clasificadora">Capa clasificadora</h3>
+<p>Una vez extraídos los rasgos, pueden ser interpretados y utilizados para hacer una predicción, como la clasificación del tipo de objeto en una fotografía.</p>
+
+<p>Esto puede lograrse primero aplanando los mapas de características bidimensionales, y luego agregando una capa de salida totalmente conectada. Para un problema de <strong>clasificación binaria</strong>, la capa de salida tendría un nodo que predeciría un valor entre 0 y 1 para las dos clases.</p>
+<h4 id="ejemplo">Ejemplo:</h4>
+<ul>
+  <li><a href="https://developers.google.com/machine-learning/practica/image-classification/exercise-1">Clasificación de gatos y perros</a>.</li>
+</ul>
+
+<p>Un ejemplo de <strong>clasificación multiclase</strong> utilizando CNN es el realizado con el dataset de <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR 10</a>, donde se pueden llegar a predecir 10 tipos de elementos diferentes; avión, vehículo, pajaro, gato, ciervo, perro, rana, caballo, barco y camión.</p>
+<h4 id="ejemplo-1">Ejemplo:</h4>
+<ul>
+  <li><a href="https://github.com/keras-team/keras/blob/master/examples/cifar10_cnn.py">Clasificación con 10 clases CIFAR 10 - keras</a></li>
+  <li><a href="https://colab.research.google.com/github/Hvass-Labs/TensorFlow-Tutorials/blob/master/06_CIFAR-10.ipynb#scrollTo=_7IkURkEUWFq">Clasificación con 10 clases CIFAR 10 - TensorFlow</a></li>
+</ul>
+
+<h2 id="conclusiones">Conclusiones</h2>
+<p>En este notebook se ha visto como para el reconocimiento facial no nos basta con hacer uso de Redes Neuronales Convolucionales, ya que solo se ha obtenido una precisión del 10%.
+Esto es debido a que nos encontramos con 500 clases diferentes y un número de parámetros (679,873,684) demasiado grande en las capas completamente conectadas.</p>
+
+<p>A continuación se va a analizar la detección y reconocimiento de rostros con el modelo Multi-task Cascaded Convolutional Networks <a href="https://kpzhang93.github.io/MTCNN_face_detection_alignment">MTCNN</a> y el <a href="https://github.com/rcmalli/keras-vggface">VGGFace2 en Keras</a>.</p>
+   
+        </div>
+    
+    </div>
+</div>
+    
+
+
+      </section>
+
+     
+    </div>
+  </div>
+
+  
+  <script src="assets/js/feather.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

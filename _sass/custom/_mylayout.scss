@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+body {
+   @include gradient(to top left , $list2);
+}
+
+
+.my4Vientos-header {
+   background-image: url('./../../images/header-bg.png'); 
+   background-size:cover;
+   a{
+    padding-left: 15%;
+   }
+}
+.my4Vientos-subject { 
+
+  h1.my4Vientos-title {
+    color: darken($my-secondary-color, $amount: 30%);
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+.my4Vientos-level  { 
+ // @extend .mt-2 ;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  img.my4Vientos-img{
+    max-width: 5rem;
+    padding: 1rem;
+  }
+  h3.my4Vientos-subtitle {
+    float:none;
+    text-align: left;
+    font-style: italic;
+    color: lighten($my-secondary-color, $amount: 20%);
+  }
+}
+//
+// The basic two column layout
+//
+
+/*
+ * Sidebar
+ */
+
+
+.sidebar-sticky {
+
+  align-items: flex-start;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+
+  .list-group-item {
+
+     background-color: transparent !important;
+     border: 0ch;
+     .nav-link {
+      font-size: large;
+      color: $nav-child-link-color!important;
+      &:hover  {
+        color: darken($color: $nav-child-link-color, $amount: 80%) !important;
+      }
+    }   
+  }
+}
+
+
+

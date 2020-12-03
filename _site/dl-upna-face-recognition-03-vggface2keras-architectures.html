@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<!--
+  Modified version of jekyll-theme-architect-0.1.1/_layouts/default.html
+-->
+
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/dl-upna-face-recognition/assets/css/print.css" media="print" type="text/css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom/custom.css" media="screen" type="text/css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/dl-upna-face-recognition/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <script src="https://cdn.usefathom.com/script.js" site="IQOPWWLQ" defer></script>
+
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Face-Recognition-03-VGGFace2Keras_Architectures | dl-upna-face-recognition</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Face-Recognition-03-VGGFace2Keras_Architectures" />
+<meta name="author" content="Ander Frago Landa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Comparación entre los diferentes modelos preentrenados de Keras-VGGFace" />
+<meta property="og:description" content="Comparación entre los diferentes modelos preentrenados de Keras-VGGFace" />
+<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-03-vggface2keras-architectures" />
+<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-03-vggface2keras-architectures" />
+<meta property="og:site_name" content="dl-upna-face-recognition" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-03-vggface2keras-architectures","author":{"@type":"Person","name":"Ander Frago Landa"},"headline":"Face-Recognition-03-VGGFace2Keras_Architectures","description":"Comparación entre los diferentes modelos preentrenados de Keras-VGGFace","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
+    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>dl-upna-face-recognition</h1> </a>
+
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <h2></h2>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="container-fluid bg-light">
+    <div class="row my4Vientos-subject">
+      <aside class="col-4 col-md-2 " >
+
+        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-group mr-auto">
+              <li class="list-group-item">
+                <a class="nav-link" href="/dl-upna-face-recognition/">                  
+                  <div class="d-sm-none d-md-block">
+                    <span data-feather="home"></span>
+                    Introducción
+                  </div> 
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="home"></span>
+                  </div> 
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="linkedin"></span>
+                        CV
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="linkedin"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="http://github.com/afrago">
+                  <div class="d-sm-none d-md-block">
+                        <span data-feather="github"></span>
+                        Github
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <span data-feather="github"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item dropdown ">
+                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span data-feather="globe"> </span> Face recognition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
+                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
+                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
+                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
+                  </div>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+
+      </aside>
+      <section class="col-8 col-md-10">
+        <div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 mx-auto">
+            <h2 id="comparación-entre-los-diferentes-modelos-preentrenados-de-keras-vggface">Comparación entre los diferentes modelos preentrenados de Keras-VGGFace</h2>
+<p><em>Notebook</em>: <a href="https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_03_VGGFace2Keras_Architectures.ipynb">dl-upna-Face-Recognition-03-VGGFace2Keras_Architectures</a></p>
+
+<p>La biblioteca keras-vggface proporciona tres modelos VGGModels pre-entrenados, un modelo VGGFace1 a través de model=’vgg16′ (el predeterminado), y dos modelos VGGFace2 ‘resnet50’ y ‘senet50’.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+<p>Podemos comprobar como el modelo vgg16 es un modelo más sencillo que los dos posteriores, con muchas menos capas, y que no llega a predecir la celebridad correcta dentro de las 5 predicciónes recogidas. Hay que tener en cuenta que este modelo fue entrenado con la versión 1 del dataset VGGFace.
+En los dos siguientes modelos, ‘resnet50’ y ‘senet50’, la predicción es correcta y supera el 99%. Una vez llegado a estos niveles de predicción podemos ver que las mejoras son solo pequeñas decimas del porcentaje. En ‘resnet50’ predice la celebridad correcta con un 99,534%. En ‘senet50’ la predicción del personaje correcto se hace con un 99,784%</p>
+
+   
+        </div>
+    
+    </div>
+</div>
+    
+
+
+      </section>
+
+     
+    </div>
+  </div>
+
+  
+  <script src="assets/js/feather.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@charset 'utf8';
+
+$my-primary-color:#2A66A3;
+$my-secondary-color:#556270;
+$my-accent-color: #A3332A;
+
+
+$my-link-color: darken($my-secondary-color,20%);
+$my-link-hover-color: $my-accent-color;
+
+
+$my-sidebar-color: #4dd6d3;
+$nav-child-link-color: darken($my-secondary-color, 20%) ;
+
+
+$list1: $my-sidebar-color, lighten($my-sidebar-color,50%) , white, white, white; 
+$list2: $my-sidebar-color,  lighten($my-sidebar-color,20%), lighten($my-sidebar-color,50%); 
+
+

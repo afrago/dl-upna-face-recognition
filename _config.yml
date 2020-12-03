@@ -1,16 +1,13 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+title: Deep learning -  Face recognition
+theme: jekyll-theme-architect
+repository: afrago/dl-upna-face-recognition
+markdown: kramdown
+baseurl: /dl-upna-face-recognition
+author:
+  name: Ander Frago Landa
+  url: https://anderfrago.github.io
 
-theme: jekyll-theme-slate
+sass:
+  style: compact # possible values: nested expanded compact compressed
+  
+      
