@@ -7,7 +7,7 @@
     background: #ffeca1 url(../../assets/images/light.png) no-repeat 0px 0px;
   }
   .my-alert-primary {
-    color: $my-secondary-color;;
+    color: $my-primary-color;;
     border-color: lighten($color: $my-primary-color, $amount: 20%);
     background-color:  lighten($color: $my-primary-color, $amount: 50%);;
   }

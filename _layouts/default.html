@@ -28,11 +28,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
-    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
-
-    <div class="collapse navbar-collapse" >
-      <ul class="navbar-nav ">
+  <nav class="navbar navbar-expand-lg navbar-light  my4Vientos-header" aria-label="header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <a class="navbar-brand" href="/blogari/"><h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         </li>
@@ -40,62 +42,72 @@
     </div>
   </nav>
 
-
-  <div id="container-fluid bg-light">
+  <div class="container-fluid">
     <div class="row my4Vientos-subject">
-      <aside class="col-4 col-md-2 " >
+      <aside class="col-4 col-md-2  sidebar-sticky  d-none d-sm-block" >
 
-        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <nav class="navbar navbar-expand-lg navbar-light " aria-label="sidebar">
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="list-group mr-auto">
               <li class="list-group-item">
-                <a class="nav-link" href="/dl-upna-face-recognition/">                  
-                  <div class="d-sm-none d-md-block">
+                <a class="nav-link" href="/blogari/">                  
+                  <div class="d-none d-sm-block">
                     <span data-feather="home"></span>
-                    Introducción
+                    Ni neu
                   </div> 
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="home"></span>
                   </div> 
                 </a>
               </li>
               <li class="list-group-item">
                 <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
-                  <div class="d-sm-none d-md-block">
+                  <div class="d-none d-sm-block">
                         <span data-feather="linkedin"></span>
                         CV
                   </div>
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="linkedin"></span>
                   </div>
                 </a>
-              </li>
+              </li>              
               <li class="list-group-item">
                 <a class="nav-link" href="http://github.com/afrago">
-                  <div class="d-sm-none d-md-block">
+                  <div class="d-none d-sm-block">
                         <span data-feather="github"></span>
                         Github
                   </div>
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="github"></span>
                   </div>
                 </a>
               </li>
-              <li class="list-group-item dropdown ">
-                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span data-feather="globe"> </span> Face recognition
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
-                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
-                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
-                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
-                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
-                  </div>
+              <li class=" list-group-item dropdown ">
+                 <div class="d-none d-sm-block">
+                    <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span data-feather="file"> </span> Face recognition
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="01-cnn">Version 1</a>
+                      <a class="dropdown-item" href="02-vggface2keras">Version 2</a>
+                      <a class="dropdown-item" href="03-vggface2keras-architectures">Version 3</a>
+                      <a class="dropdown-item" href="04-finetuning">Version 4</a>
+                      <a class="dropdown-item" href="dl-upna-who-am-i">Who am I</a>
+                    </div>
+                 </div>
+                 <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                    <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span data-feather="file"> </span> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="01-cnn">Version 1</a>
+                      <a class="dropdown-item" href="02-vggface2keras">Version 2</a>
+                      <a class="dropdown-item" href="03-vggface2keras-architectures">Version 3</a>
+                      <a class="dropdown-item" href="04-finetuning">Version 4</a>
+                      <a class="dropdown-item" href="dl-upna-who-am-i">Who am I</a>
+                    </div>
+                 </div>
               </li>
              
             </ul>
@@ -103,7 +115,7 @@
         </nav>
 
       </aside>
-      <section class="col-8 col-md-10">
+      <section class=" col-12 col-md-10">
         {{ content }}
       </section>
 
@@ -128,8 +140,23 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script>
-    feather.replace()
+    feather.replace();
   </script>
+ <script>
+  $(function(){
+    $('.navbar-toggler').click(function(){
+      if ($('aside').hasClass('d-none')){
+        $('aside').removeClass('d-none').addClass('d-block');
+        $('section').removeClass('col-12 ').addClass('col-6 ');
+
+      } else {
+        $('aside').removeClass('d-block').addClass('d-none');
+        $('section').removeClass('col-6 ').addClass('col-12');
+
+      }
+    })
+  });
+</script>
 </body>
 
 </html>

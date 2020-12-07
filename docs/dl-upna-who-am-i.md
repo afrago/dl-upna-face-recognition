@@ -7,7 +7,7 @@ permalink: /dl-upna-who-am-i
 ---
 
 ## Who am I?
-
+{: .alert .my-alert-primary }
 [Aplicación](./app/) que muestra el parecido de la persona en la foto.
 Se ha desarrollado una pequeña aplicación para poner a prueba el uso de TensorFlow JavaScript.
 La red reunonal utilizada ha sido mobileNet.Se ha implementado un fine tuning para adaptar esta red a la detección de nuestros personajes personalizados. La red se ha entrenado con 3 fotos de [3 personajes](./dl-upna-who-am-i.html/src/assets/data); Bill Gates, Larry Page y Mark Zuckerberg. Los resultados de la red neuronal no son buenos, se obtiene una precisión del 14%.

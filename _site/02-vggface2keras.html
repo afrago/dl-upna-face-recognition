@@ -25,28 +25,30 @@
 
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Face-Recognition-02-VGGFace2Keras | dl-upna-face-recognition</title>
+<title>Face-Recognition-02-VGGFace2Keras | Deep learning - Face recognition</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Face-Recognition-02-VGGFace2Keras" />
 <meta name="author" content="Ander Frago Landa" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Sistemas de reconocimiento facial" />
 <meta property="og:description" content="Sistemas de reconocimiento facial" />
-<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras" />
-<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras" />
-<meta property="og:site_name" content="dl-upna-face-recognition" />
+<link rel="canonical" href="http://localhost:4000/dl-upna-face-recognition/02-vggface2keras" />
+<meta property="og:url" content="http://localhost:4000/dl-upna-face-recognition/02-vggface2keras" />
+<meta property="og:site_name" content="Deep learning - Face recognition" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/dl-upna-face-recognition/dl-upna-face-recognition-02-vggface2keras","author":{"@type":"Person","name":"Ander Frago Landa"},"headline":"Face-Recognition-02-VGGFace2Keras","description":"Sistemas de reconocimiento facial","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Face-Recognition-02-VGGFace2Keras","url":"http://localhost:4000/dl-upna-face-recognition/02-vggface2keras","author":{"@type":"Person","name":"Ander Frago Landa"},"description":"Sistemas de reconocimiento facial","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg my4Vientos-header" aria-label="header">
-    <a class="navbar-brand" href="/dl-upna-face-recognition/"><h1>dl-upna-face-recognition</h1> </a>
-
-    <div class="collapse navbar-collapse" >
-      <ul class="navbar-nav ">
+  <nav class="navbar navbar-expand-lg navbar-light  my4Vientos-header" aria-label="header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <a class="navbar-brand" href="/blogari/"><h1>Deep learning -  Face recognition</h1> </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <h2></h2>
         </li>
@@ -54,62 +56,72 @@
     </div>
   </nav>
 
-
-  <div id="container-fluid bg-light">
+  <div class="container-fluid">
     <div class="row my4Vientos-subject">
-      <aside class="col-4 col-md-2 " >
+      <aside class="col-4 col-md-2  sidebar-sticky  d-none d-sm-block" >
 
-        <nav class="navbar sidebar-sticky navbar-expand-lg navbar-light " aria-label="sidebar">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <nav class="navbar navbar-expand-lg navbar-light " aria-label="sidebar">
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="list-group mr-auto">
               <li class="list-group-item">
-                <a class="nav-link" href="/dl-upna-face-recognition/">                  
-                  <div class="d-sm-none d-md-block">
+                <a class="nav-link" href="/blogari/">                  
+                  <div class="d-none d-sm-block">
                     <span data-feather="home"></span>
-                    Introducción
+                    Ni neu
                   </div> 
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="home"></span>
                   </div> 
                 </a>
               </li>
               <li class="list-group-item">
                 <a class="nav-link" href="http://linkedin.com/in/ander-f-l">
-                  <div class="d-sm-none d-md-block">
+                  <div class="d-none d-sm-block">
                         <span data-feather="linkedin"></span>
                         CV
                   </div>
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="linkedin"></span>
                   </div>
                 </a>
-              </li>
+              </li>              
               <li class="list-group-item">
                 <a class="nav-link" href="http://github.com/afrago">
-                  <div class="d-sm-none d-md-block">
+                  <div class="d-none d-sm-block">
                         <span data-feather="github"></span>
                         Github
                   </div>
-                  <div class="d-none d-sm-block d-md-none">
+                  <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
                     <span data-feather="github"></span>
                   </div>
                 </a>
               </li>
-              <li class="list-group-item dropdown ">
-                  <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span data-feather="globe"> </span> Face recognition
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="dl-upna-face-recognition-01-cnn">Versión 1</a>
-                    <a class="dropdown-item" href="dl-upna-face-recognition-02-vggface2keras">Versión 2</a>
-                    <a class="dropdown-item" href="dl-upna-face-recognition-03-vggface2keras-architectures">Versión 3</a>
-                    <a class="dropdown-item" href="dl_upna_face_recognition_04_finetuning">Versión 4</a>
-                    <a class="dropdown-item" href="dl-upna-who-am-i">Aplicación</a>
-                  </div>
+              <li class=" list-group-item dropdown ">
+                 <div class="d-none d-sm-block">
+                    <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span data-feather="file"> </span> Face recognition
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="01-cnn">Version 1</a>
+                      <a class="dropdown-item" href="02-vggface2keras">Version 2</a>
+                      <a class="dropdown-item" href="03-vggface2keras-architectures">Version 3</a>
+                      <a class="dropdown-item" href="04-finetuning">Version 4</a>
+                      <a class="dropdown-item" href="dl-upna-who-am-i">Who am I</a>
+                    </div>
+                 </div>
+                 <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                    <a class="  nav-link  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span data-feather="file"> </span> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="01-cnn">Version 1</a>
+                      <a class="dropdown-item" href="02-vggface2keras">Version 2</a>
+                      <a class="dropdown-item" href="03-vggface2keras-architectures">Version 3</a>
+                      <a class="dropdown-item" href="04-finetuning">Version 4</a>
+                      <a class="dropdown-item" href="dl-upna-who-am-i">Who am I</a>
+                    </div>
+                 </div>
               </li>
              
             </ul>
@@ -117,11 +129,10 @@
         </nav>
 
       </aside>
-      <section class="col-8 col-md-10">
-        <div class="container-fluid">
-    <div class="row ">
-        <div class="col-12 mx-auto">
-            <h2 id="sistemas-de-reconocimiento-facial">Sistemas de reconocimiento facial</h2>
+      <section class=" col-12 col-md-10">
+        <div class="row ">
+    <div class="col-12 mx-auto">
+        <h2 class="alert my-alert-primary" id="sistemas-de-reconocimiento-facial">Sistemas de reconocimiento facial</h2>
 <p><em>Notebook</em>: <a href="https://colab.research.google.com/github/afrago/dl-upna-face-recognition/blob/master/dl_upna_Face_Recognition_01_CNN.ipynb">dl-upna-Face-Recognition-01-CNN</a></p>
 
 <p>El sistema de reconocimiento facial es una aplicación dirigida por ordenador que identifica automáticamente a una persona en una imagen digital. Esto es posible mediante un análisis de las características faciales del sujeto extraídas de la imagen.
@@ -140,27 +151,29 @@ Un sistema de reconocimiento facial consta de dos modos:</p>
   </li>
 </ol>
 
-<h3 id="proceso-de-trabajo">Proceso de trabajo</h3>
 <p>El reconocimiento de las caras se describe a menudo como un proceso que consta de cuatro pasos: detección de las caras, alineación de las caras, extracción de los rasgos y, por último, reconocimiento de las caras.</p>
 
-<h4 id="etapa-1-y-2-detección-y-alineación">Etapa 1 y 2: Detección y alineación</h4>
+<h2 class="my-alert-primary" id="etapa-1-y-2-detección-y-alineación">Etapa 1 y 2: Detección y alineación</h2>
+
 <p>El primer paso en cualquier cara automática sistemas de reconocimiento es la detección de rostros en imágenes. Después de que una cara ha sido detectada, la tarea de extracción de características es para obtener los rasgos que se introducen en un rostro sistema de clasificación. Dependiendo del tipo de sistema de clasificación, las características pueden ser características locales como líneas o puntos, o rasgos faciales como los ojos, la nariz y la boca.</p>
 
 <p>En este ejemplo se hace uso de la Red Neural Convolucional en Cascada Multitarea, o MTCNN, para la detección y la alineación de la cara. Los enfoques de aprendizaje profundo pueden lograr un rendimiento impresionante en estas dos tareas.  MTCNN propone un marco de tareas múltiples en cascada profunda que explota la correlación inherente entre ellas para aumentar su rendimiento. En particular, este marco adopta una estructura en cascada con tres etapas de redes convolucionales profundas cuidadosamente diseñadas que predicen la cara y la ubicación de los puntos de referencia de una manera de grueso a fino.</p>
 
-<h4 id="etapa-3-representaciones">Etapa 3: Representaciones</h4>
+<h2 class="my-alert-primary" id="etapa-3-representaciones">Etapa 3: Representaciones</h2>
+
 <p>Hemos detectado y alineado las imágenes de las caras y las hemos alimentado a un modelo de reconocimiento facial en los pasos anteriores. Ahora, tenemos representaciones vectoriales para cada imagen.</p>
 
-<h4 id="etapa-4-verificación">Etapa 4: Verificación</h4>
+<h2 class="my-alert-primary" id="etapa-4-verificación">Etapa 4: Verificación</h2>
+
 <p>Compararemos las representaciones vectoriales de las imágenes.</p>
 
-<h2 id="conclusión">Conclusión</h2>
+<h2 class="alert my-alert-primary" id="conclusión">Conclusión</h2>
+
 <p>Con este notebook podemos comprobar como las redes neuronales son un sistema válido de reconocimiento facial. 
 El reconocimiento facial opera en uno o dos modos: 1) verificación (o autenticación) de la cara, y 2) identificación (o reconocimiento) de la cara. En ambos módos se puede hacer uso de las redes neuronales.</p>
    
-        </div>
-    
     </div>
+
 </div>
     
 
@@ -177,8 +190,23 @@ El reconocimiento facial opera en uno o dos modos: 1) verificación (o autentica
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script>
-    feather.replace()
+    feather.replace();
   </script>
+ <script>
+  $(function(){
+    $('.navbar-toggler').click(function(){
+      if ($('aside').hasClass('d-none')){
+        $('aside').removeClass('d-none').addClass('d-block');
+        $('section').removeClass('col-12 ').addClass('col-6 ');
+
+      } else {
+        $('aside').removeClass('d-block').addClass('d-none');
+        $('section').removeClass('col-6 ').addClass('col-12');
+
+      }
+    })
+  });
+</script>
 </body>
 
 </html>

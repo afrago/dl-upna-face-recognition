@@ -1,19 +1,17 @@
 @charset 'utf8';
 
-$my-primary-color:#2A66A3;
-$my-secondary-color:#556270;
+$my-primary-color:#3D4D4D;
+$my-secondary-color: white;
 $my-accent-color: #A3332A;
 
 
-$my-link-color: darken($my-secondary-color,20%);
+$my-link-color: darken($my-accent-color,20%);
 $my-link-hover-color: $my-accent-color;
 
 
-$my-sidebar-color: #4dd6d3;
-$nav-child-link-color: darken($my-secondary-color, 20%) ;
+$my-sidebar-color: #dfe9e9;
+$nav-child-link-color: darken($my-primary-color, 20%) ;
 
-
-$list1: $my-sidebar-color, lighten($my-sidebar-color,50%) , white, white, white; 
-$list2: $my-sidebar-color,  lighten($my-sidebar-color,20%), lighten($my-sidebar-color,50%); 
+$list2: #8A9999, $my-sidebar-color; 
 
 
